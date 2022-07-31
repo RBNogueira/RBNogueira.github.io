@@ -119,3 +119,11 @@ h2{
   font-size: 12px;
   font-family: 'Raleway', sans-serif;
 }
+
+.footer{
+  color: #ffffff;
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 1px;
+}
