@@ -1,19 +1,58 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-html,body{
-  height: 100%;
+main{
+  max-width: 920px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  background: rgba(45, 54, 64, 0.618);
+  border-radius: 20px;
 }
 
 body{
-  height: 100%;
- background: #090e1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  width: 100%;
+  height: 100vh; 
+  background: url(../img/Meteor-green.svg);  
+  background-repeat:no-repeat;
+  padding: 1rem;
+  
+}
+
+.icons ul li img{
+  width: 30px;
+  cursor: pointer;  
+}
+
+.icons ul li {
+  list-style: none;
+}
+
+.icons ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.icons ul li:hover{
+  transition: 0.4s;
+}
+
+.icons ul li:hover{
+  transform: translateY(-10px);
 }
 
 .avatar{
-  width: 150px;
+  width: 120px;
   border-radius: 100%;
   border: 2px solid #08b602;
   margin: 20px;
@@ -27,7 +66,7 @@ body{
 
 h1{
   color: #ffffff;
-  font-size: 38px;
+  font-size: 32px;
   font-weight: bold; 
   font-family: 'Raleway', sans-serif;
   margin-bottom: 10px;
@@ -35,7 +74,7 @@ h1{
 
 h2{
   color: #ffffff;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;  
   font-family: 'Lemon', cursive;
   margin-bottom: 50px;
@@ -46,33 +85,41 @@ h2{
 }
 
 .links-list li{
-  margin: 40px 20px; 
+  margin: 20px 20px; 
 }
 
 .links-list li img{
-  width: 70px;
-  padding: 0;  
+  width: 30px;  
 }
 
+
 .links-list li {
-  display:flex;
+  display:block;
   align-items: center;
-  background: #161c2b;
+  background: #1a2b37;
   border: 1px solid #08b602; 
   padding: 0px 10px;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px 2px #055200;    
+  box-shadow: 0px 0px 20px 2px #055200;
+  transition: 0.4s;
+    
+}
+
+.links-list li:hover{
+ background-color:#1eff001a;
+
+ 
 }
 
 .links-list li a {
   display: block;  
   padding: 10px 10px;
   text-decoration: none;
-  color: #6184c9;
+  color: #31e200;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 18px;
   font-family: 'Roboto Condensed', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   
 }
 
@@ -80,10 +127,6 @@ h2{
   display: block;
   color: #ffffff;
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 12px;
   font-family: 'Raleway', sans-serif;
 }
-
-
-
-
